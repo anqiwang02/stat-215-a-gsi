@@ -1,0 +1,13 @@
+# LaTeX auxiliary files (keep only .tex and .pdf)
+*.aux
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fdb_latexmk
+
+# OS / editor junk
+.DS_Store
+.Rhistory
+.ipynb_checkpoints/

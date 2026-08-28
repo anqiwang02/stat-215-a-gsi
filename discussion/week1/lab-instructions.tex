@@ -48,10 +48,10 @@ These instructions are based on previous lab materials by Nico Sanchez, Anthony 
     \item Using VSCode on Windows with your WSL setup: \url{https://code.visualstudio.com/docs/remote/wsl}
 \end{itemize}
 In principle, you don't \textit{have} to use a Unix environment. But using one will make things easier. And if something isn't working in your non-Unix environment, I likely won't be able to help you.
-\subsection{Set up your stat-215-a repository}
-See the Week1 discussion section slides for instructions. Your lab submission will be made through your private \texttt{stat-215-a} repository.
+\subsection{Set up your stat-215a repository}
+See the Week1 discussion section slides for instructions. Your lab submission will be made through your private \texttt{stat-215a} repository.
 \subsection{Obtain lab materials}
-Copy over the lab materials from the \texttt{stat-215-a-gsi} repository to your own repository \texttt{stat-215-a}. i.e.~the \texttt{stat-215-a-gsi/labX} directory should be copied to \texttt{stat-215-a/labX}. \textbf{Do not} do the lab in some other folder on your computer and copy it to your repo at the last moment. It is easiest to just do the whole lab within the repository directory.
+Copy over the lab materials from the \texttt{stat-215-a-gsi} repository to your own repository \texttt{stat-215a}. i.e.~the \texttt{stat-215-a-gsi/labX} directory should be copied to \texttt{stat-215a/labX}. \textbf{Do not} do the lab in some other folder on your computer and copy it to your repo at the last moment. It is easiest to just do the whole lab within the repository directory.
 
 \section{Environment setup}
 
@@ -59,7 +59,7 @@ Copy over the lab materials from the \texttt{stat-215-a-gsi} repository to your 
 If you haven't already, install \texttt{miniconda} or \texttt{conda} (don't install Anaconda).
 
 \subsection{Making/updating an environment from the lab's environment.yaml file}
-Set up your 215a environment using the provided \texttt{labX/code/environment.yaml}. First, take a look at the file to see how it is formatted; it is just a plaintext list of dependencies. Navigate to your \texttt{labX} directory in your own \texttt{stat-215-a} repo. If you don't yet have an environment named ``215a'' (you can check using \texttt{conda env list}), run this command:
+Set up your 215a environment using the provided \texttt{labX/code/environment.yaml}. First, take a look at the file to see how it is formatted; it is just a plaintext list of dependencies. Navigate to your \texttt{labX} directory in your own \texttt{stat-215a} repo. If you don't yet have an environment named ``215a'' (you can check using \texttt{conda env list}), run this command:
 \begin{verbatim}
 conda env create -f code/environment.yaml
 \end{verbatim}
@@ -245,7 +245,7 @@ labX/
 \end{verbatim}
 \begin{itemize}
     \item \texttt{code} should contain all of your code, including any Jupyter notebooks.
-    \item  \texttt{data} should contain any data that you use, including data which we give you and intermediate outputs from your code. \textbf{Do not commit data to your repo}. When testing your code, I will put the data in \texttt{stat-215-gsi/labX/data} into your \texttt{stat-215-a/labX/data}.
+    \item  \texttt{data} should contain any data that you use, including data which we give you and intermediate outputs from your code. \textbf{Do not commit data to your repo}. When testing your code, I will put the data in \texttt{stat-215-gsi/labX/data} into your \texttt{stat-215a/labX/data}.
     \item \texttt{documents} should contain any relevant documents, including papers which we give you or which you use.
     \item \texttt{figs} should contain any figures that you generate which are included in a LaTeX report.
     \item \texttt{other} should contain any other relevant files.
