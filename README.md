@@ -32,8 +32,6 @@ lab0/                    # the warm-up lab (not representative of later labs' di
 - `lab0/` — Lab 0, the warm-up lab.
 - `lab#/` (future) — Each lab follows the same pattern: `instructions/` for the handout, `code/` for starter code/environments, `data/` for datasets.
 
-[Quarto](https://quarto.org) is the tool used to render Jupyter notebooks to PDF — see the demo in `discussion/week1/`.
-
 ## Acknowledgements
 
 Thanks to Nico Sanchez, Anthony Ozerov, Chengzhong Ye, Theo Saarinen, Omer Ronen, James Duncan, Tiffany Tang, Zoe Vernon, Rebecca Barter, and other past STAT 215A GSIs for sharing their material.
