@@ -18,11 +18,18 @@ import time
 
 def slow(a, b):
     c = np.zeros_like(a)
+    # i goes over rows
     for i in range(a.shape[0]):
+        # j goes over columns
         for j in range(a.shape[1]):
             c[i, j] = a[i, j] + b[i, j]
     return c
 
+
+# Cython converts the function to C, but we haven't told Cython what types a, b, i, or j are. 
+# So Cython still has to treat many of these values as general Python objects. 
+# The loop is compiled, but operations like a[i, j] + b[i, j] can still involve Python-level machinery. 
+# So simply adding @cython.compile does not automatically make this numerical loop super fast.
 @cython.compile
 def slow_cython(a, b):
     c = np.zeros_like(a)
@@ -31,6 +38,9 @@ def slow_cython(a, b):
             c[i, j] = a[i, j] + b[i, j]
     return c
 
+
+# Numba infers numeric types and compiles loop to machine code
+# So if you time the very first call, you're measuring compilation + execution.
 @jit
 def slow_numba(a, b):
     c = np.zeros_like(a)
